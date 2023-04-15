@@ -17,7 +17,7 @@ defmodule ThreeCubeWeb.Router do
   scope "/", ThreeCubeWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", ThreeJsLive, :home
   end
 
   # Other scopes may use custom stacks.
